@@ -1,0 +1,44 @@
+/* escritorio */
+@media (min-width: 1024px) {
+    .form-container {
+        max-width: 40rem;
+    }
+    
+
+    .image-container img {
+        width: 20%;
+    }
+}
+
+/*  ipad */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form-container {
+        max-width: 30rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+
+    .image-container img {
+        width: 25%;
+    }
+}
+
+/*  iphone  */
+@media (min-width: 500px) {
+    .form-container {
+        max-width: 20rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer-index{
+        width: 100%;
+    }
+    .image-container img {
+        width: 40%;
+    }
+}
