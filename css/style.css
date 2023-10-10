@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.625rem 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    margin-bottom: 0;
+}
+
+.form-container {
+    max-width: 25rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.1875rem;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem 0;
+}
+a {
+    text-decoration: none; /* decoración de enlace  */
+    color: inherit; /* hereda color del texto de su contenedor */
+    cursor: default; /* hambia cursor a la forma predeterminada */
+}
+
+a:hover {
+    text-decoration: underline; /*agrega subrayado al pasar el cursor sobre los enlaces si es necesario */
+    color: #007bff; /* cambia el color de los enlaces al pasar el cursor si es necesario */
+}
+
+main {
+    user-select: none; /* evita la selección de texto */
+    cursor: default; /* cambia el cursor a la forma predeterminada */
+}
+.mg-fluid .mb-3{
+    box-sizing: 3.125rem;
+}
+.image-container {
+    display: flex; /* utilizamos flexbox para alinear horizontalmente */
+    justify-content: space-between; /* distribuir el espacio entre las imágenes */
+    align-items: center; /* centrar verticalmente las imágenes */
+}
+
+.image-container img {
+    width: 30%; /* cada imagen ocupa 30% del ancho del contenedor */
+}
