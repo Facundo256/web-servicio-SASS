@@ -1,12 +1,51 @@
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+main {
+    .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna*/
+    grid-gap: 20px;/* Agrega espacio entre las filas y el ancho máximo */
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    }
+    .image-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    div img {
+        width: 30%;
+    }
+    div .input-group{
+        margin-bottom: 15px;
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.3125rem;
+        }
+        input {
+            width: 100%;
+            padding: 0.625rem;
+            border: 0.0625rem solid #ccc;
+            border-radius: 0.1875rem;
+        }
+    }
+    .form-container {
+        max-width: 25rem;
+        margin: 1.25rem auto;
+        padding: 1.25rem;
+        background-color: #fff;
+        border: 0.0625rem solid #ddd;
+        border-radius: 0.3125rem;
+        box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
 }
-.form-container {
+
+/* .form-container {
     max-width: 25rem;
     margin: 1.25rem auto;
     padding: 1.25rem;
@@ -36,22 +75,28 @@ body {
     padding: 0.625rem;
     border: 0.0625rem solid #ccc;
     border-radius: 0.1875rem;
-}
-main {
-    user-select: none;
-    cursor: default;
-}
+} */
 
-.grid-container {
+
+/* .grid-container {
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna*/
-    grid-gap: 20px;/* Agrega espacio entre las filas y el ancho máximo */
-    max-width: 100%;
+    /*grid-gap: 20px;*//* Agrega espacio entre las filas y el ancho máximo */
+    /*max-width: 100%;
     margin: 0 auto;
-}
+} */
 
-.grid-item {/* Estilos para los elementos dentro de la cuadrícula */
-    background-color: #fff;
+/* .grid-item {*/ /* Estilos para los elementos dentro de la cuadrícula */
+/*     background-color: #fff;
     padding: 20px;
     text-align: center;
 }
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    width: 30%;
+} */

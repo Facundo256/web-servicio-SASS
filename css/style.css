@@ -15,39 +15,89 @@
   color: #fff;
   padding: 0.625rem 0;
 }
-
-.navbar {
+.header .navbar {
   margin-bottom: 0;
 }
-
-a {
+.header .navbar .nav-item-perfil img {
+  position: absolute;
+  top: 20;
+  right: 0;
+  height: 60%;
+}
+.header .navbar a {
+  /* de header*/
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: white;
   color: inherit;
   cursor: default;
 }
-
-a:hover {
+.header .navbar a:hover {
   text-decoration: underline;
-  color: #007bff;
+  color: #fff;
 }
-
-.nav-item-perfil img {
+.header .navbar a:hover {
+  text-decoration: underline;
+}
+.header .navbar .nav-item-perfil img {
   position: absolute;
   top: 20;
   right: 0;
   height: 60%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+/* .header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.625rem 0;
+}
+.navbar {
+    margin-bottom: 0;
 }
 
-.form-container {
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+.nav-item-perfil img {
+    position: absolute;
+    top: 20;
+    right: 0;
+    height: 60%;
+} */
+main .container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna*/
+  grid-gap: 20px; /* Agrega espacio entre las filas y el ancho máximo */
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+main .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main div img {
+  width: 30%;
+}
+main div .input-group {
+  margin-bottom: 15px;
+}
+main div .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+}
+main div .input-group input {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.1875rem;
+}
+main .form-container {
   max-width: 25rem;
   margin: 1.25rem auto;
   padding: 1.25rem;
@@ -56,48 +106,72 @@ body {
   border-radius: 0.3125rem;
   box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
 }
-
-.form-container h2 {
+main .form-container h2 {
   text-align: center;
   margin-bottom: 1.25rem;
 }
 
+/* .form-container {
+    max-width: 25rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
 .input-group {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .input-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.3125rem;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
 }
 
 .input-group input {
-  width: 100%;
-  padding: 0.625rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.1875rem;
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.1875rem;
+} */
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna*/
+/*grid-gap: 20px;*/ /* Agrega espacio entre las filas y el ancho máximo */
+/*max-width: 100%;
+    margin: 0 auto;
+} */
+/* .grid-item {*/ /* Estilos para los elementos dentro de la cuadrícula */
+/*     background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-  user-select: none;
-  cursor: default;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Una sola columna*/
-  grid-gap: 20px; /* Agrega espacio entre las filas y el ancho máximo */
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid-item { /* Estilos para los elementos dentro de la cuadrícula */
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
+.image-container img {
+    width: 30%;
+} */
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem 0;
+*/
 .footer {
   position: fixed;
   bottom: 0;
@@ -107,7 +181,18 @@ main {
   text-align: center;
   padding: 0.625rem 0;
 }
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
 
+/* a:hover {
+    text-decoration: underline;
+    color: #007bff;
+} */
 .footer-index {
   position: relative;
   bottom: 0;
@@ -115,7 +200,14 @@ main {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 0.625rem 0;
+  padding: 0.3125rem 0;
+}
+.footer-index a {
+  color: #fff;
+}
+.footer-index a:hover {
+  text-decoration: underline;
+  color: #007bff;
 }
 
 /* escritorio */

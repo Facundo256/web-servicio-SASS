@@ -1,0 +1,23 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+@mixin link-styles {/* de header*/
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+        color: $primary-color;
+    }
+}
+@mixin footer-rep{
+    bottom: 0;
+    width: 100%;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+}
